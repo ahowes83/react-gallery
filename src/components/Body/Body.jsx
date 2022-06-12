@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
 
