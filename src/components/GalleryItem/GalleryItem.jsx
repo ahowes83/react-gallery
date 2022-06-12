@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import '../Body/Body.css';
 
 function GalleryItem(props){
   const [show, setShow] = useState(null);
