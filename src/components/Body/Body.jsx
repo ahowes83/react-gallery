@@ -12,11 +12,11 @@ function Body(props){
   }, []); //empty array tells it to run only once
 
   const getItems = ()=>{
-    axios.get('/items').then((response)=>{
-      console.log(response.data);
+    axios.get('/gallery').then((response)=>{
+      setItems(response.data);
     }).catch((err)=>{
       console.log(err);
-      alert('error getting items');
+      alert('error getting gallery');
     });
   }
 
@@ -25,6 +25,7 @@ function Body(props){
         <h2>Body</h2>
         <p>Beans!</p>
         <p>{JSON.stringify(props)}</p>
+        <galleryList itemArray = {items}/>
     </div>
   )
 }

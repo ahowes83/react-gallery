@@ -10,9 +10,12 @@ function GalleryItem(props){
   }
   return(
     <div onClick={toggleShow}>
-        <h2>Picture in Gallery</h2>
-        <p>Beans!</p>
-        <p>{JSON.stringify(props)}</p>
+      {
+        show?
+        <h2>{props.item.description}</h2>
+        :
+        <img src="{props.item.url}"/>
+      }
     </div>
   )
 }
