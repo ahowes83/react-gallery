@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom/client';
 import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
 
@@ -24,7 +24,7 @@ function Body(props){
     <div>
         <h2>Body</h2>
         <p>{JSON.stringify(props)}</p>
-        < GalleryList imagearray = {items} getgallery = {getGallery} />
+        < GalleryList imagesarray = {items} />
     </div>
   )
 }

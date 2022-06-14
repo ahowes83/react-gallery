@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 const GalleryList = (props)=>{
@@ -8,7 +8,7 @@ const GalleryList = (props)=>{
   return(
     <div>
         <h2>Gallery List</h2>
-        {props.itemArray.map(item =>(<GalleryItem item={item}/>))}
+        {props.imagesarray.map( item =>(<GalleryItem item = {item}/>))}
     </div>
   )
 }

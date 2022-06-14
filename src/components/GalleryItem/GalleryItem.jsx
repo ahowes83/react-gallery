@@ -1,6 +1,6 @@
 import React from 'react';
 import {useEffect, useState} from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom';
 
 const GalleryItem=(props)=>{
   const [show, setShow] = useState(null);
@@ -13,9 +13,9 @@ const GalleryItem=(props)=>{
     <div onClick={toggleShow}>
       {
         show?
-        <h2>{props.item.description}</h2>
+        <img onclick={toggleShow} src="{props.item.path}"/>
         :
-        <img src="{props.item.path}"/>
+        <p onclick={toggleShow}>{props.item.description}</p>
       }
     </div>
   )
