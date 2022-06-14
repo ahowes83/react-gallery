@@ -24,7 +24,7 @@ function Body(props){
     <div>
         <h2>Body</h2>
         <p>{JSON.stringify(props)}</p>
-        < galleryList imageArray = {items} getGallery = {getGallery} />
+        < GalleryList imagearray = {items} getgallery = {getGallery} />
     </div>
   )
 }
