@@ -12,7 +12,7 @@ const GalleryItem=(props)=>{
 
   const likeImage = ()=>{
     let toBeLiked = props.item.id;
-    axios.put('/gallery/likes'+toBeLiked).then((response)=>{
+    axios.put('/gallery/like/'+ toBeLiked).then((response)=>{
       console.log(response.data);
       props.getGallery();
     }).catch((err)=>{
