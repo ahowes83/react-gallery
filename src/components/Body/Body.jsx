@@ -22,9 +22,7 @@ function Body(props){
 
   return(
     <div>
-        <h2>Body</h2>
-        <p>{JSON.stringify(props)}</p>
-        < GalleryList imagesarray = {items} />
+        < GalleryList images_array = {items} />
     </div>
   )
 }

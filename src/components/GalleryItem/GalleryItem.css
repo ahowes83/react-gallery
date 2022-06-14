@@ -1,4 +1,11 @@
 img {
-  height: 8em;
-  width: 8em;
+  height: 10em;
+  width: 10em;
+  border-width: .2em;
+}
+
+.description {
+  height: 10em;
+  width: 10em;
+  border-width: .2em;
 }

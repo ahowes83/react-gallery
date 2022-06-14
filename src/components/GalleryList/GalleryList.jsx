@@ -7,8 +7,7 @@ const GalleryList = (props)=>{
   const [hook, testHook] = useState(null);
   return(
     <div>
-        <h2>Gallery List</h2>
-        {props.imagesarray.map( item =>(<GalleryItem item = {item}/>))}
+        {props.images_array.map( item =>(<GalleryItem item = {item}/>))}
     </div>
   )
 }

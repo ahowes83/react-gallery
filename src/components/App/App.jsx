@@ -9,7 +9,6 @@ function App() {
           <h1 className="App-title">Gallery of Tony Hawk's Life</h1>
         </header>
         <Body />
-        <p>Gallery goes here</p>
       </div>
     );
 }
