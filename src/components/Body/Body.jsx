@@ -5,13 +5,13 @@ import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
 
 function Body(props){
-  const [hook, testHook] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect( ()=>{
-    getItems();
+    getGallery();
   }, []); //empty array tells it to run only once
 
-  const getItems = ()=>{
+  const getGallery = ()=>{
     axios.get('/gallery').then((response)=>{
       setItems(response.data);
     }).catch((err)=>{
@@ -23,9 +23,8 @@ function Body(props){
   return(
     <div>
         <h2>Body</h2>
-        <p>Beans!</p>
         <p>{JSON.stringify(props)}</p>
-        <galleryList itemArray = {items}/>
+        < galleryList imageArray = {items} getGallery = {getGallery} />
     </div>
   )
 }
