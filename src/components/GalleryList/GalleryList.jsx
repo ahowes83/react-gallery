@@ -1,6 +1,6 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import React from 'react';
-import * as ReactDOM from 'react-dom';
+//import * as ReactDOM from 'react-dom';
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 const GalleryList = (props)=>{
