@@ -14,7 +14,6 @@ const GalleryItem=(props)=>{
 
     axios.put('/gallery/like/'+ toBeLiked).then((response)=>{
       console.log(response.data);
-      props.getGallery();
     }).catch((err)=>{
       console.log(err);
       alert('error adding likes');
