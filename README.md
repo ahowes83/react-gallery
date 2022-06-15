@@ -1,9 +1,9 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+React Gallery
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Displays a gallery of images from Tony Hawk's life. The project uses axios and react which are new tools for us. I would like to improve how the images are displayed, but for now I am sticking to the base requirements.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

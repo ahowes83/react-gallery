@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import React from 'react';
-//import * as ReactDOM from 'react-dom/client';
 import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
 
