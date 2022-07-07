@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import axios from 'axios';
+import {getGallery} from '../Body/Body';
 
 const GalleryItem=(props)=>{
   const [show, setShow] = useState(false);
@@ -14,6 +15,7 @@ const GalleryItem=(props)=>{
 
     axios.put('/gallery/like/'+ toBeLiked).then((response)=>{
       console.log(response.data);
+      getGallery();
     }).catch((err)=>{
       console.log(err);
       alert('error adding likes');
