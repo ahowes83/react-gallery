@@ -26,4 +26,5 @@ function Body(props){
   )
 }
 
+export {getGallery};
 export default Body;
